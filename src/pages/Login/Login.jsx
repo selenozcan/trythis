@@ -11,8 +11,6 @@ const Login = () => {
 
   const message = location.state?.message || "";
   const from = location.state?.from || "/dashboard";
-  console.log(from, location)
-
 
   const handleLogin = (loginWith) => {
     loginWith()
