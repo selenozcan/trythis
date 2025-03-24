@@ -1,0 +1,79 @@
+.past-container {
+  padding: 20px;
+}
+
+.past-title {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: #3a2e39;
+}
+
+.past-description {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.past-activity-list {
+  list-style: none;
+  padding: 0;
+  margin-top: 2rem;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.past-activity-item {
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.status-badge {
+  padding: 4px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.status-badge.completed {
+  background-color: #c8f7dc;
+  color: #155724;
+}
+
+.status-badge.missed {
+  background-color: #f8d7da;
+  color: #721c24;
+}
+
+.category-badge {
+  display: inline-block;
+  background-color: #edb183;
+  padding: 4px 10px;
+  font-size: 13px;
+  border-radius: 20px;
+  margin-top: 0.5rem;
+  color: #3a2e39;
+}
+
+.completed-date {
+  font-size: 0.9rem;
+  color: #777;
+  margin-top: 0.5rem;
+  text-align:left;
+}
+
+.empty-message {
+  text-align: center;
+  color: #777;
+  margin-top: 2rem;
+}

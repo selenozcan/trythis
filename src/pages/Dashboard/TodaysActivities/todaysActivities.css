@@ -1,0 +1,98 @@
+.list-container {
+  height: 100%;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+}
+
+.list-container h1 {
+  font-size: 2em;
+  margin-bottom: 0.5em;
+  text-align: center;
+  color: #3a2e39;
+}
+
+.list-container p {
+  margin-bottom: 1em;
+  text-align: center;
+}
+
+.activity-list {
+  list-style: none;
+  padding: 0;
+  width: 100%;
+  margin-left: auto;
+  margin-right: auto;
+  flex: 1;
+  overflow-y: auto;
+}
+
+.activity-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.activity-list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
+}
+
+.activity-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #ffffff;
+  padding: 1rem;
+  margin-bottom: 1rem;
+  border-radius: 8px;
+  box-shadow: 0 0 8px rgba(0, 0, 0, 0.05);
+}
+
+.activity-name {
+  font-size: 1rem;
+}
+
+.activity-name.completed {
+  text-decoration: line-through;
+  color: #999;
+}
+
+.empty-message {
+  text-align: center;
+  color: #777;
+  margin-top: 2rem;
+}
+
+.congrats-popup {
+  position: fixed;
+  top: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: linear-gradient(135deg, #d4edda, #c8f7dc);
+  color: #155724;
+  padding: 1rem 2rem;
+  border-radius: 12px;
+  font-weight: 600;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  animation: fadeSlideInOut 2.5s ease-in-out;
+  z-index: 999;
+  font-size: 1rem;
+}
+
+@keyframes fadeSlideInOut {
+  0% {
+    opacity: 0;
+    transform: translate(-50%, -20px) scale(0.95);
+  }
+  20% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+  80% {
+    opacity: 1;
+    transform: translate(-50%, 0) scale(1);
+  }
+  100% {
+    opacity: 0;
+    transform: translate(-50%, -10px) scale(0.98);
+  }
+}

@@ -1,0 +1,165 @@
+/* General Styles */
+.navbar {
+  background: #3a2e39;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+.user-info {
+  padding: 10px;
+}
+
+.profile-pic {
+  width: 130px;
+  height: 130px;
+  overflow: hidden;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.logout-btn {
+  background: #d9534f;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin-top: auto;
+
+  cursor: pointer;
+  width: 100%;
+  text-align: center;
+  font-size: 16px;
+  border-radius: 5px;
+}
+
+.logout-btn:hover {
+  background: #c9302c;
+}
+
+@media (min-width: 768px) {
+  .navbar {
+    height: 100vh;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .hide-on-desktop {
+    display: none;
+  }
+
+  .nav-menu {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    padding-top: 20px;
+    height: 100vh;
+    text-align: center;
+  }
+
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    width: 100%;
+  }
+
+  .nav-menu li {
+    padding: 15px;
+    width: 100%;
+    cursor: pointer;
+    transition: background 0.3s;
+    border-radius: 5px;
+  }
+
+  .nav-menu li:hover {
+    background: #444;
+  }
+}
+
+@media (max-width: 768px) , (max-height: 768px) {
+  .navbar {
+    width: 100%;
+    height: auto;
+    padding: 10px 20px;
+    justify-content: space-between;
+    align-items: flex-start;
+  }
+
+  .navbar-top {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+  }
+
+  .logo {
+    font-size: 24px;
+    letter-spacing: 5px;
+  }
+
+  .menu-btn {
+    background: none;
+    border: none;
+    font-size: 28px;
+    cursor: pointer;
+    color: white;
+    transition: transform 0.5s ease;
+  }
+
+  .menu-btn.open {
+    transform: rotate(90deg);
+  }
+
+  .nav-menu {
+    display: none;
+    overflow: hidden;
+  }
+
+  .nav-menu.show {
+    display:block;
+    width: 100%;
+    padding: 15px 0;
+  }
+
+  .nav-menu ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+  }
+
+  .nav-menu li {
+    padding: 10px;
+    cursor: pointer;
+    border: 1px solid white;
+    border-radius: 5px;
+    margin-bottom: 5px;
+  }
+
+  .nav-menu li:hover {
+    background: #444;
+  }
+
+  .user-info {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+  }
+
+  .profile-pic {
+    width: 50px;
+    height: 50px;
+    overflow: hidden;
+    border-radius: 50%;
+    margin-bottom: 0;
+  }
+
+  .logout-btn {
+    margin-top: 10px;
+  }
+}

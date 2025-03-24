@@ -1,0 +1,80 @@
+.dashboard {
+  max-width: 900px;
+  margin: 2rem auto;
+  padding: 1rem;
+}
+
+.dashboard h1 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+  text-align: center;
+
+  color: #3a2e39;
+}
+
+.streak-info {
+  text-align: center;
+  font-weight: 500;
+  margin-bottom: 2rem;
+  font-size: 1.1rem;
+  color: #52ab98;
+}
+
+section {
+  background-color: #f8f8f8;
+  padding: 1.2rem;
+  border-radius: 16px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.06);
+  margin-bottom: 1.5rem;
+}
+
+section h3 {
+  margin-bottom: 0.6rem;
+  color: #2b6777;
+}
+
+.goal-card p,
+.stats-card li,
+.quote-card p,
+.tip-card p {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.goal-card progress {
+  width: 100%;
+  height: 20px;
+  border-radius: 10px;
+  appearance: none;
+  overflow: hidden;
+}
+
+.goal-card progress::-webkit-progress-bar {
+  background-color: #ddd;
+  border-radius: 10px;
+}
+
+.goal-card progress::-webkit-progress-value {
+  background-color: #52ab98;
+  border-radius: 10px;
+}
+
+.goal-card progress::-moz-progress-bar {
+  background-color: #52ab98;
+  border-radius: 10px;
+}
+
+.stats-card ul {
+  list-style: none;
+  padding-left: 0;
+}
+
+.stats-card li {
+  padding: 0.3rem 0;
+}
+
+.quote-card p,
+.tip-card p {
+  font-style: italic;
+  color: #555;
+}
