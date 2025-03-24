@@ -6,7 +6,7 @@
 
 ## Live Demo
 
-[https://trythis.vercel.app](https://trythis.vercel.app)](https://trythis-azure.vercel.app/)
+[https://trythis-azure.vercel.app](https://trythis-azure.vercel.app)
 
 ---
 
