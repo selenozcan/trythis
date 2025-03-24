@@ -2,8 +2,6 @@
 
 **TryThis** is an interactive, motivational web app that helps you discover and complete new activities every day. Whether you're aiming to build better habits, break out of your routine, or simply have some fun, TryThis is your daily dose of inspiration and action.
 
-![TryThis Screenshot](public/preview.png) `<!-- Optional: add a screenshot -->`
-
 ---
 
 ## 🚀 Live Demo
