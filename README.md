@@ -1,26 +1,26 @@
-# 🌟 TryThis
+# TryThis
 
 **TryThis** is an interactive, motivational web app that helps you discover and complete new activities every day. Whether you're aiming to build better habits, break out of your routine, or simply have some fun, TryThis is your daily dose of inspiration and action.
 
 ---
 
-## 🚀 Live Demo
+## Live Demo
 
-🔗 [https://trythis.vercel.app](https://trythis.vercel.app)
-
----
-
-## ✨ Features
-
-- 🔄 **Swipe to Discover:** Browse through a curated set of daily activities.
-- ✅ **Daily Goals:** Add activities to your to-do list for today.
-- 📅 **Track Progress:** Keep track of what you completed or missed.
-- 📊 **Past Activity Log:** Reflect on your habits and growth over time.
-- 🔐 **Firebase Auth:** Sign in with Email/Password or **Facebook** for a personalized experience.
+[🔗 [https://trythis.vercel.app](https://trythis.vercel.app)](https://trythis-azure.vercel.app/)
 
 ---
 
-## 🧠 Why TryThis?
+## Features
+
+- **Swipe to Discover:** Browse through a curated set of daily activities.
+- **Daily Goals:** Add activities to your to-do list for today.
+- **Track Progress:** Keep track of what you completed or missed.
+- **Past Activity Log:** Reflect on your habits and growth over time.
+- **Firebase Auth:** Sign in with Email/Password or **Facebook** for a personalized experience.
+
+---
+
+## Why TryThis?
 
 Many people struggle to stay motivated and consistent with daily routines. TryThis offers a lighthearted, interactive way to:
 
@@ -42,7 +42,7 @@ Many people struggle to stay motivated and consistent with daily routines. TryTh
 
 ---
 
-## 🧪 How to Run TryThis Locally
+## How to Run TryThis Locally
 
 Follow these steps to set up and run the **TryThis** app on your local machine:
 
