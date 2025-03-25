@@ -78,8 +78,11 @@ const SeeAllActivities = () => {
               <LazyLoadImage
                 src={activity.image}
                 alt={activity.activity}
+                loading="lazy"
                 className="activity-image"
+                effect="blur"
               />
+
               <div className="activity-info">
                 <strong className="activity-name">{activity.activity}</strong>
                 <span
@@ -93,7 +96,9 @@ const SeeAllActivities = () => {
             </div>
           ))
         ) : (
-          <p className="no-activities">No activities available for this category.</p>
+          <p className="no-activities">
+            No activities available for this category.
+          </p>
         )}
       </div>
 
