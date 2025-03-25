@@ -1,47 +1,60 @@
 .home-container {
-  display: flex;
-  align-items: center;
-  flex-direction: column;
   width: 100%;
   height: 100vh;
+  overflow: hidden;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 100%;
 }
 
 .header-image {
   width: 100%;
-  height: 70%;
+  height: 100%;
   object-fit: cover;
+  display: block;
+  filter: brightness(80%);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  z-index: 1;
 }
 
 .home-content {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
-  background-color: #8d847b;
+  position: absolute;
+  bottom: 10%;
   width: 100%;
-  height: 30%;
-  padding: 2em;
-  box-sizing: border-box;
+  text-align: center;
+  padding: 2rem;
+  color: white;
+  z-index: 2;
+  animation: fadeInUp 1s ease-out;
 }
 
 .home-content h1 {
-  color: white;
-  font-size: 4.7em;
-  text-align: center;
-  margin-bottom: 0.2em;
+  font-size: 3.5em;
+  margin-bottom: 0.5rem;
 }
 
 .home-content p {
-  color: white;
-  font-size: 1.6em;
-  text-align: center;
-  margin-bottom: 1.2em;
+  font-size: 1.4em;
+  margin-bottom: 2rem;
+  font-weight: 300;
 }
 
 .home-buttons {
   display: flex;
   justify-content: center;
-  gap: 2.3em;
+  gap: 1.2rem;
   flex-wrap: wrap;
 }
 
@@ -49,28 +62,32 @@
   background-color: #2C424B;
   color: white;
   border: none;
-  padding: 15px 35px;
-  border-radius: 5px;
+  padding: 14px 28px;
+  border-radius: 8px;
   cursor: pointer;
-  font-size: 1.1em;
-  transition: transform 0.2s ease-in-out, background-color 0.3s;
+  font-size: 1em;
+  font-weight: 500;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+  transition: all 0.3s ease;
 }
 
 .home-buttons button:hover {
-  transform: scale(1.1);
-  background-color: #08171d;
+  transform: translateY(-4px);
+  background-color: #1e3037;
+}
+
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(40px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 @media (max-width: 768px) {
-  .header-image {
-    height: 50%;
-  }
-
-  .home-content {
-    padding: 1em;
-    height: 50%;
-  }
-
   .home-content h1 {
     font-size: 2em;
   }
@@ -82,5 +99,10 @@
   .home-buttons {
     flex-direction: column;
     gap: 1em;
+  }
+
+  .home-buttons button {
+    width: 100%;
+    max-width: 300px;
   }
 }

@@ -9,32 +9,31 @@ const Home = () => {
   const { user } = useAuth();
 
   const handleStartButton = () => {
-    if (!user) {
-      navigate("/login");
-    } else {
-      navigate("/dashboard");
-    }
+    navigate(user ? "/dashboard" : "/login");
   };
 
   return (
     <main className="home-container">
-      <img src={HomeImage} alt="Home Background" className="header-image" />
-      <div className="home-content">
-        <h1>Ready to try this?</h1>
-        <p>Let's get you started for today's adventures!</p>
-        <div className="home-buttons">
-          <button onClick={handleStartButton} className="start-button">
-            Start your adventure!
-          </button>
-          <button
-            onClick={() => navigate("/seeAllActivities")}
-            className="activities-button"
-          >
-            See all activities
-          </button>
-          <button onClick={() => navigate("/about")} className="about-button">
-            What is this?
-          </button>
+      <div className="image-wrapper">
+        <img src={HomeImage} alt="Home Background" className="header-image" />
+        <div className="overlay" />
+        <div className="home-content">
+          <h1>Ready to try this?</h1>
+          <p>Let's get you started for today's adventures!</p>
+          <div className="home-buttons">
+            <button onClick={handleStartButton} className="start-button">
+              Start your adventure!
+            </button>
+            <button
+              onClick={() => navigate("/seeAllActivities")}
+              className="activities-button"
+            >
+              See all activities
+            </button>
+            <button onClick={() => navigate("/about")} className="about-button">
+              What is this?
+            </button>
+          </div>
         </div>
       </div>
     </main>
