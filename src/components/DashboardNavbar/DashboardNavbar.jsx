@@ -77,7 +77,7 @@ const DashboardNavbar = () => {
           </li>
           <li
             onClick={() => {
-              navigate(".");
+              navigate("/");
               setIsMenuOpen(false);
             }}
           >
