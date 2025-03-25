@@ -1,5 +1,5 @@
 .home-container {
-  width: 100%;
+  width: 100vw;
   height: 100vh;
   overflow: hidden;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -54,12 +54,13 @@
 .home-buttons {
   display: flex;
   justify-content: center;
+  align-items: center;
   gap: 1.2rem;
   flex-wrap: wrap;
 }
 
 .home-buttons button {
-  background-color: #2C424B;
+  background-color: #F15152;
   color: white;
   border: none;
   padding: 14px 28px;
@@ -73,7 +74,7 @@
 
 .home-buttons button:hover {
   transform: translateY(-4px);
-  background-color: #1e3037;
+  background-color: #c88383;
 }
 
 @keyframes fadeInUp {
