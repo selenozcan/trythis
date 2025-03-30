@@ -21,7 +21,9 @@ const DashboardNavbar = () => {
   return (
     <nav className="navbar">
       <div className="navbar-top hide-on-desktop">
-        <p className="logo">TRYTHIS</p>
+        <p className="logo" onClick={() => navigate("/")}>
+          TRYTHIS
+        </p>
         <button
           className={`menu-btn ${isMenuOpen ? "open" : ""}`}
           onClick={() => setIsMenuOpen(!isMenuOpen)}
