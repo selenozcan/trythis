@@ -1,5 +1,8 @@
 .past-container {
+  height: 100%;
   padding: 20px;
+  display: flex;
+  flex-direction: column;
 }
 
 .past-title {
@@ -21,6 +24,18 @@
   max-width: 600px;
   margin-left: auto;
   margin-right: auto;
+
+  flex: 1;
+  overflow-y: auto;
+}
+
+.past-activity-list::-webkit-scrollbar {
+  width: 6px;
+}
+
+.past-activity-list::-webkit-scrollbar-thumb {
+  background-color: #ccc;
+  border-radius: 3px;
 }
 
 .past-activity-item {
@@ -69,7 +84,7 @@
   font-size: 0.9rem;
   color: #777;
   margin-top: 0.5rem;
-  text-align:left;
+  text-align: left;
 }
 
 .empty-message {
